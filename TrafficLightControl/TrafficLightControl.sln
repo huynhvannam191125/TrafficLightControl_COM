@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37012.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficLightControl", "TrafficLightControl.csproj", "{CEC201E9-09A2-B8B7-2D6B-BEE53A87E225}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEC201E9-09A2-B8B7-2D6B-BEE53A87E225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC201E9-09A2-B8B7-2D6B-BEE53A87E225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC201E9-09A2-B8B7-2D6B-BEE53A87E225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC201E9-09A2-B8B7-2D6B-BEE53A87E225}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DC4B57C-E5EE-427D-A5ED-E71DCED6E540}
+	EndGlobalSection
+EndGlobal
