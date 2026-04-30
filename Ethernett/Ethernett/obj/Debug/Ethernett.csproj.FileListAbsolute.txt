@@ -1,0 +1,10 @@
+D:\Ethernett\Ethernett\bin\Debug\Ethernett.exe.config
+D:\Ethernett\Ethernett\bin\Debug\Ethernett.exe
+D:\Ethernett\Ethernett\bin\Debug\Ethernett.pdb
+D:\Ethernett\Ethernett\obj\Debug\Ethernett.csproj.AssemblyReference.cache
+D:\Ethernett\Ethernett\obj\Debug\Ethernet_TrafficLight.Form1.resources
+D:\Ethernett\Ethernett\obj\Debug\Ethernett.Properties.Resources.resources
+D:\Ethernett\Ethernett\obj\Debug\Ethernett.csproj.GenerateResource.cache
+D:\Ethernett\Ethernett\obj\Debug\Ethernett.csproj.CoreCompileInputs.cache
+D:\Ethernett\Ethernett\obj\Debug\Ethernett.exe
+D:\Ethernett\Ethernett\obj\Debug\Ethernett.pdb
