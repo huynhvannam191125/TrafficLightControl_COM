@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TrafficLightControl\\TrafficLightControl.csproj": {}
+    "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\TrafficLightControl_nam\\TrafficLightControl.csproj": {}
   },
   "projects": {
-    "D:\\TrafficLightControl\\TrafficLightControl.csproj": {
+    "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\TrafficLightControl_nam\\TrafficLightControl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TrafficLightControl\\TrafficLightControl.csproj",
+        "projectUniqueName": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\TrafficLightControl_nam\\TrafficLightControl.csproj",
         "projectName": "TrafficLightControl",
-        "projectPath": "D:\\TrafficLightControl\\TrafficLightControl.csproj",
+        "projectPath": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\TrafficLightControl_nam\\TrafficLightControl.csproj",
         "packagesPath": "C:\\Users\\Nam Huynh\\.nuget\\packages\\",
-        "outputPath": "D:\\TrafficLightControl\\obj\\",
+        "outputPath": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\TrafficLightControl_nam\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

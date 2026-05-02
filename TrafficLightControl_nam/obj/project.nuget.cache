@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8fUEVWnN4XM=",
+  "dgSpecHash": "E78I5bo7PUU=",
   "success": true,
-  "projectFilePath": "D:\\TrafficLightControl\\TrafficLightControl.csproj",
+  "projectFilePath": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\TrafficLightControl_nam\\TrafficLightControl.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nam Huynh\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\8.0.0\\runtime.linux-arm.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
     "C:\\Users\\Nam Huynh\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\8.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",

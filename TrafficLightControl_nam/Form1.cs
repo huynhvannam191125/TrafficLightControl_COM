@@ -535,41 +535,6 @@ namespace TrafficLightControl
 
         private void UpdateModeLabel(string text)
         { lblCurrentMode.Text = text; lblCurrentMode.ForeColor = Color.Lime; }
-
-        private void panelTrafficLight_Paint(object? sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panelLight_Paint(object? sender, PaintEventArgs e)
-        {
-            if (sender is not Panel p) return;
-            var g = e.Graphics; g.SmoothingMode = SmoothingMode.AntiAlias;
-            int d = Math.Min(p.Width, p.Height) - 12, x = (p.Width - d) / 2, y = (p.Height - d) / 2;
-            var rect = new Rectangle(x, y, d, d);
-            using (var br = new SolidBrush(p.BackColor)) g.FillEllipse(br, rect);
-            using (var pen = new Pen(Color.FromArgb(90, 90, 90), 2)) g.DrawEllipse(pen, rect);
-        }
-
-    }
-
-    // ══════════════════════════════════════════════════════════════
-    // EXTENSION
-    // ══════════════════════════════════════════════════════════════
-    public static class GraphicsExtensions
-    {
-        public static void FillRoundedRectangle(this Graphics g, Brush b, Rectangle r, int radius)
-        { using (var path = BuildPath(r, radius)) g.FillPath(b, path); }
-        public static void DrawRoundedRectangle(this Graphics g, Pen p, Rectangle r, int radius)
-        { using (var path = BuildPath(r, radius)) g.DrawPath(p, path); }
-        private static GraphicsPath BuildPath(Rectangle r, int radius)
-        {
-            int d = radius * 2; var path = new GraphicsPath();
-            path.AddArc(r.X, r.Y, d, d, 180, 90);
-            path.AddArc(r.Right - d, r.Y, d, d, 270, 90);
-            path.AddArc(r.Right - d, r.Bottom - d, d, d, 0, 90);
-            path.AddArc(r.X, r.Bottom - d, d, d, 90, 90);
-            path.CloseFigure(); return path;
-        }
+   
     }
 }
