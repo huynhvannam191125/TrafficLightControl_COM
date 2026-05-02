@@ -90,22 +90,11 @@ namespace Ethernet_TrafficLight
             this.btnApplyTime = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button888_click = new System.Windows.Forms.Button();
-            this.button = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btn5_click = new System.Windows.Forms.Button();
             this.panelTrafficLight.SuspendLayout();
             this.grpServer.SuspendLayout();
             this.grpControlSource.SuspendLayout();
             this.grpTrafficKind.SuspendLayout();
             this.grpTiming.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTrafficLight
@@ -157,7 +146,7 @@ namespace Ethernet_TrafficLight
             this.lblTrafficRedText.ForeColor = System.Drawing.Color.OrangeRed;
             this.lblTrafficRedText.Location = new System.Drawing.Point(38, 148);
             this.lblTrafficRedText.Name = "lblTrafficRedText";
-            this.lblTrafficRedText.Size = new System.Drawing.Size(31, 20);
+            this.lblTrafficRedText.Size = new System.Drawing.Size(25, 15);
             this.lblTrafficRedText.TabIndex = 3;
             this.lblTrafficRedText.Text = "DO";
             // 
@@ -168,7 +157,7 @@ namespace Ethernet_TrafficLight
             this.lblTrafficYellowText.ForeColor = System.Drawing.Color.Gold;
             this.lblTrafficYellowText.Location = new System.Drawing.Point(30, 298);
             this.lblTrafficYellowText.Name = "lblTrafficYellowText";
-            this.lblTrafficYellowText.Size = new System.Drawing.Size(52, 20);
+            this.lblTrafficYellowText.Size = new System.Drawing.Size(40, 15);
             this.lblTrafficYellowText.TabIndex = 4;
             this.lblTrafficYellowText.Text = "VANG";
             // 
@@ -179,7 +168,7 @@ namespace Ethernet_TrafficLight
             this.lblTrafficGreenText.ForeColor = System.Drawing.Color.LimeGreen;
             this.lblTrafficGreenText.Location = new System.Drawing.Point(30, 448);
             this.lblTrafficGreenText.Name = "lblTrafficGreenText";
-            this.lblTrafficGreenText.Size = new System.Drawing.Size(53, 20);
+            this.lblTrafficGreenText.Size = new System.Drawing.Size(41, 15);
             this.lblTrafficGreenText.TabIndex = 5;
             this.lblTrafficGreenText.Text = "XANH";
             // 
@@ -190,7 +179,7 @@ namespace Ethernet_TrafficLight
             this.lblHdrClock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.lblHdrClock.Location = new System.Drawing.Point(180, 52);
             this.lblHdrClock.Name = "lblHdrClock";
-            this.lblHdrClock.Size = new System.Drawing.Size(80, 20);
+            this.lblHdrClock.Size = new System.Drawing.Size(64, 15);
             this.lblHdrClock.TabIndex = 2;
             this.lblHdrClock.Text = "DONG HO";
             // 
@@ -201,10 +190,9 @@ namespace Ethernet_TrafficLight
             this.lblClock.ForeColor = System.Drawing.Color.Red;
             this.lblClock.Location = new System.Drawing.Point(180, 72);
             this.lblClock.Name = "lblClock";
-            this.lblClock.Size = new System.Drawing.Size(214, 51);
+            this.lblClock.Size = new System.Drawing.Size(170, 41);
             this.lblClock.TabIndex = 3;
             this.lblClock.Text = "00:00:00";
-            this.lblClock.Click += new System.EventHandler(this.lblClock_Click);
             // 
             // lblDate
             // 
@@ -212,7 +200,7 @@ namespace Ethernet_TrafficLight
             this.lblDate.ForeColor = System.Drawing.Color.LightGray;
             this.lblDate.Location = new System.Drawing.Point(188, 118);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(0, 21);
+            this.lblDate.Size = new System.Drawing.Size(0, 17);
             this.lblDate.TabIndex = 4;
             // 
             // lblHdrCountdown
@@ -222,7 +210,7 @@ namespace Ethernet_TrafficLight
             this.lblHdrCountdown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.lblHdrCountdown.Location = new System.Drawing.Point(180, 148);
             this.lblHdrCountdown.Name = "lblHdrCountdown";
-            this.lblHdrCountdown.Size = new System.Drawing.Size(100, 20);
+            this.lblHdrCountdown.Size = new System.Drawing.Size(79, 15);
             this.lblHdrCountdown.TabIndex = 5;
             this.lblHdrCountdown.Text = "DEM NGUOC";
             // 
@@ -237,7 +225,6 @@ namespace Ethernet_TrafficLight
             this.lblCountdown.TabIndex = 6;
             this.lblCountdown.Text = "--";
             this.lblCountdown.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblCountdown.Click += new System.EventHandler(this.lblCountdown_Click);
             // 
             // lblGiayConLai
             // 
@@ -245,7 +232,7 @@ namespace Ethernet_TrafficLight
             this.lblGiayConLai.ForeColor = System.Drawing.Color.LightGray;
             this.lblGiayConLai.Location = new System.Drawing.Point(205, 270);
             this.lblGiayConLai.Name = "lblGiayConLai";
-            this.lblGiayConLai.Size = new System.Drawing.Size(88, 21);
+            this.lblGiayConLai.Size = new System.Drawing.Size(74, 17);
             this.lblGiayConLai.TabIndex = 7;
             this.lblGiayConLai.Text = "giay con lai";
             // 
@@ -256,7 +243,7 @@ namespace Ethernet_TrafficLight
             this.lblHdrStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.lblHdrStatus.Location = new System.Drawing.Point(180, 298);
             this.lblHdrStatus.Name = "lblHdrStatus";
-            this.lblHdrStatus.Size = new System.Drawing.Size(102, 20);
+            this.lblHdrStatus.Size = new System.Drawing.Size(79, 15);
             this.lblHdrStatus.TabIndex = 8;
             this.lblHdrStatus.Text = "TRANG THAI";
             // 
@@ -268,7 +255,7 @@ namespace Ethernet_TrafficLight
             this.lblCurrentMode.Location = new System.Drawing.Point(180, 320);
             this.lblCurrentMode.MaximumSize = new System.Drawing.Size(210, 0);
             this.lblCurrentMode.Name = "lblCurrentMode";
-            this.lblCurrentMode.Size = new System.Drawing.Size(129, 25);
+            this.lblCurrentMode.Size = new System.Drawing.Size(100, 20);
             this.lblCurrentMode.TabIndex = 9;
             this.lblCurrentMode.Text = "Cho ket noi...";
             // 
@@ -298,7 +285,7 @@ namespace Ethernet_TrafficLight
             this.lblIPCaption.ForeColor = System.Drawing.Color.LightGray;
             this.lblIPCaption.Location = new System.Drawing.Point(14, 32);
             this.lblIPCaption.Name = "lblIPCaption";
-            this.lblIPCaption.Size = new System.Drawing.Size(69, 20);
+            this.lblIPCaption.Size = new System.Drawing.Size(55, 15);
             this.lblIPCaption.TabIndex = 0;
             this.lblIPCaption.Text = "IP Server:";
             // 
@@ -309,7 +296,7 @@ namespace Ethernet_TrafficLight
             this.txtServerIP.ForeColor = System.Drawing.Color.White;
             this.txtServerIP.Location = new System.Drawing.Point(90, 28);
             this.txtServerIP.Name = "txtServerIP";
-            this.txtServerIP.Size = new System.Drawing.Size(130, 27);
+            this.txtServerIP.Size = new System.Drawing.Size(130, 23);
             this.txtServerIP.TabIndex = 1;
             this.txtServerIP.Text = "192.168.1.10";
             this.txtServerIP.TextChanged += new System.EventHandler(this.txtServerIP_TextChanged);
@@ -321,7 +308,7 @@ namespace Ethernet_TrafficLight
             this.lblPortCaption.ForeColor = System.Drawing.Color.LightGray;
             this.lblPortCaption.Location = new System.Drawing.Point(232, 32);
             this.lblPortCaption.Name = "lblPortCaption";
-            this.lblPortCaption.Size = new System.Drawing.Size(38, 20);
+            this.lblPortCaption.Size = new System.Drawing.Size(32, 15);
             this.lblPortCaption.TabIndex = 2;
             this.lblPortCaption.Text = "Port:";
             // 
@@ -332,7 +319,7 @@ namespace Ethernet_TrafficLight
             this.txtServerPort.ForeColor = System.Drawing.Color.White;
             this.txtServerPort.Location = new System.Drawing.Point(270, 28);
             this.txtServerPort.Name = "txtServerPort";
-            this.txtServerPort.Size = new System.Drawing.Size(65, 27);
+            this.txtServerPort.Size = new System.Drawing.Size(65, 23);
             this.txtServerPort.TabIndex = 3;
             this.txtServerPort.Text = "5000";
             // 
@@ -359,7 +346,7 @@ namespace Ethernet_TrafficLight
             this.lblStatus.ForeColor = System.Drawing.Color.OrangeRed;
             this.lblStatus.Location = new System.Drawing.Point(14, 70);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(179, 20);
+            this.lblStatus.Size = new System.Drawing.Size(143, 15);
             this.lblStatus.TabIndex = 5;
             this.lblStatus.Text = "X Server chua khoi dong";
             // 
@@ -385,7 +372,7 @@ namespace Ethernet_TrafficLight
             this.chkGUI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.chkGUI.Location = new System.Drawing.Point(14, 30);
             this.chkGUI.Name = "chkGUI";
-            this.chkGUI.Size = new System.Drawing.Size(285, 25);
+            this.chkGUI.Size = new System.Drawing.Size(239, 21);
             this.chkGUI.TabIndex = 0;
             this.chkGUI.Text = "Bat che do GUI (May tinh dieu khien)";
             this.chkGUI.CheckedChanged += new System.EventHandler(this.chkGUI_CheckedChanged);
@@ -397,7 +384,7 @@ namespace Ethernet_TrafficLight
             this.lblControlMode.ForeColor = System.Drawing.Color.Cyan;
             this.lblControlMode.Location = new System.Drawing.Point(14, 58);
             this.lblControlMode.Name = "lblControlMode";
-            this.lblControlMode.Size = new System.Drawing.Size(175, 20);
+            this.lblControlMode.Size = new System.Drawing.Size(144, 15);
             this.lblControlMode.TabIndex = 1;
             this.lblControlMode.Text = "Che do: MANUAL (Tai tru)";
             // 
@@ -502,7 +489,7 @@ namespace Ethernet_TrafficLight
             this.lblTimeRedCap.ForeColor = System.Drawing.Color.LightGray;
             this.lblTimeRedCap.Location = new System.Drawing.Point(3, 32);
             this.lblTimeRedCap.Name = "lblTimeRedCap";
-            this.lblTimeRedCap.Size = new System.Drawing.Size(32, 20);
+            this.lblTimeRedCap.Size = new System.Drawing.Size(25, 15);
             this.lblTimeRedCap.TabIndex = 0;
             this.lblTimeRedCap.Text = "Do:";
             // 
@@ -514,7 +501,7 @@ namespace Ethernet_TrafficLight
             this.txtRed.Location = new System.Drawing.Point(35, 28);
             this.txtRed.MaxLength = 1;
             this.txtRed.Name = "txtRed";
-            this.txtRed.Size = new System.Drawing.Size(40, 31);
+            this.txtRed.Size = new System.Drawing.Size(40, 26);
             this.txtRed.TabIndex = 1;
             this.txtRed.Text = "5";
             this.txtRed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -527,7 +514,7 @@ namespace Ethernet_TrafficLight
             this.lblTimeRedS.ForeColor = System.Drawing.Color.LightGray;
             this.lblTimeRedS.Location = new System.Drawing.Point(80, 32);
             this.lblTimeRedS.Name = "lblTimeRedS";
-            this.lblTimeRedS.Size = new System.Drawing.Size(17, 21);
+            this.lblTimeRedS.Size = new System.Drawing.Size(14, 17);
             this.lblTimeRedS.TabIndex = 2;
             this.lblTimeRedS.Text = "s";
             // 
@@ -538,7 +525,7 @@ namespace Ethernet_TrafficLight
             this.lblTimeYellowCap.ForeColor = System.Drawing.Color.LightGray;
             this.lblTimeYellowCap.Location = new System.Drawing.Point(100, 32);
             this.lblTimeYellowCap.Name = "lblTimeYellowCap";
-            this.lblTimeYellowCap.Size = new System.Drawing.Size(45, 20);
+            this.lblTimeYellowCap.Size = new System.Drawing.Size(36, 15);
             this.lblTimeYellowCap.TabIndex = 3;
             this.lblTimeYellowCap.Text = "Vang:";
             // 
@@ -550,7 +537,7 @@ namespace Ethernet_TrafficLight
             this.txtYellow.Location = new System.Drawing.Point(148, 28);
             this.txtYellow.MaxLength = 1;
             this.txtYellow.Name = "txtYellow";
-            this.txtYellow.Size = new System.Drawing.Size(40, 31);
+            this.txtYellow.Size = new System.Drawing.Size(40, 26);
             this.txtYellow.TabIndex = 4;
             this.txtYellow.Text = "3";
             this.txtYellow.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -563,7 +550,7 @@ namespace Ethernet_TrafficLight
             this.lblTimeYellowS.ForeColor = System.Drawing.Color.LightGray;
             this.lblTimeYellowS.Location = new System.Drawing.Point(193, 32);
             this.lblTimeYellowS.Name = "lblTimeYellowS";
-            this.lblTimeYellowS.Size = new System.Drawing.Size(17, 21);
+            this.lblTimeYellowS.Size = new System.Drawing.Size(14, 17);
             this.lblTimeYellowS.TabIndex = 5;
             this.lblTimeYellowS.Text = "s";
             // 
@@ -574,7 +561,7 @@ namespace Ethernet_TrafficLight
             this.lblTimeGreenCap.ForeColor = System.Drawing.Color.LightGray;
             this.lblTimeGreenCap.Location = new System.Drawing.Point(210, 32);
             this.lblTimeGreenCap.Name = "lblTimeGreenCap";
-            this.lblTimeGreenCap.Size = new System.Drawing.Size(45, 20);
+            this.lblTimeGreenCap.Size = new System.Drawing.Size(37, 15);
             this.lblTimeGreenCap.TabIndex = 6;
             this.lblTimeGreenCap.Text = "Xanh:";
             // 
@@ -586,7 +573,7 @@ namespace Ethernet_TrafficLight
             this.txtGreen.Location = new System.Drawing.Point(260, 28);
             this.txtGreen.MaxLength = 1;
             this.txtGreen.Name = "txtGreen";
-            this.txtGreen.Size = new System.Drawing.Size(40, 31);
+            this.txtGreen.Size = new System.Drawing.Size(40, 26);
             this.txtGreen.TabIndex = 7;
             this.txtGreen.Text = "8";
             this.txtGreen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -599,7 +586,7 @@ namespace Ethernet_TrafficLight
             this.lblTimeGreenS.ForeColor = System.Drawing.Color.LightGray;
             this.lblTimeGreenS.Location = new System.Drawing.Point(305, 32);
             this.lblTimeGreenS.Name = "lblTimeGreenS";
-            this.lblTimeGreenS.Size = new System.Drawing.Size(17, 21);
+            this.lblTimeGreenS.Size = new System.Drawing.Size(14, 17);
             this.lblTimeGreenS.TabIndex = 8;
             this.lblTimeGreenS.Text = "s";
             // 
@@ -627,7 +614,7 @@ namespace Ethernet_TrafficLight
             this.textBox1.Location = new System.Drawing.Point(189, 399);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(184, 29);
+            this.textBox1.Size = new System.Drawing.Size(184, 24);
             this.textBox1.TabIndex = 14;
             this.textBox1.Text = "HUỲNH VĂN NAM";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -638,147 +625,25 @@ namespace Ethernet_TrafficLight
             this.textBox2.Location = new System.Drawing.Point(189, 425);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(184, 29);
+            this.textBox2.Size = new System.Drawing.Size(184, 24);
             this.textBox2.TabIndex = 15;
             this.textBox2.Text = "23647071";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button888_click
-            // 
-            this.button888_click.BackColor = System.Drawing.Color.ForestGreen;
-            this.button888_click.Location = new System.Drawing.Point(900, 239);
-            this.button888_click.Name = "button888_click";
-            this.button888_click.Size = new System.Drawing.Size(138, 52);
-            this.button888_click.TabIndex = 16;
-            this.button888_click.Text = "áp dụng";
-            this.button888_click.UseVisualStyleBackColor = false;
-            this.button888_click.Click += new System.EventHandler(this.button888_click_Click);
-            // 
-            // button
-            // 
-            this.button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(100)))));
-            this.button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
-            this.button.ForeColor = System.Drawing.Color.White;
-            this.button.Location = new System.Drawing.Point(890, 486);
-            this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(85, 30);
-            this.button.TabIndex = 9;
-            this.button.Text = "Ap Dung";
-            this.button.UseVisualStyleBackColor = false;
-            this.button.Click += new System.EventHandler(this.btnApplyTime_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(1044, 69);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(150, 500);
-            this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTrafficLight_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel2.Location = new System.Drawing.Point(25, 25);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(100, 120);
-            this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLight_Paint);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(0)))));
-            this.panel3.Location = new System.Drawing.Point(25, 175);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(100, 120);
-            this.panel3.TabIndex = 1;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLight_Paint);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(60)))), ((int)(((byte)(0)))));
-            this.panel4.Location = new System.Drawing.Point(25, 325);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(100, 120);
-            this.panel4.TabIndex = 2;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLight_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label1.Location = new System.Drawing.Point(38, 148);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "DO";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Gold;
-            this.label2.Location = new System.Drawing.Point(30, 298);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "VANG";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label3.Location = new System.Drawing.Point(30, 448);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "XANH";
-            // 
-            // btn5_click
-            // 
-            this.btn5_click.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(100)))));
-            this.btn5_click.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn5_click.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.btn5_click.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn5_click.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
-            this.btn5_click.ForeColor = System.Drawing.Color.White;
-            this.btn5_click.Location = new System.Drawing.Point(245, 511);
-            this.btn5_click.Name = "btn5_click";
-            this.btn5_click.Size = new System.Drawing.Size(85, 30);
-            this.btn5_click.TabIndex = 9;
-            this.btn5_click.Text = "Ap Dung";
-            this.btn5_click.UseVisualStyleBackColor = false;
-            this.btn5_click.Click += new System.EventHandler(this.btnApplyTime_Click);
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Olive;
-            this.ClientSize = new System.Drawing.Size(1428, 1055);
-            this.Controls.Add(this.button888_click);
+            this.ClientSize = new System.Drawing.Size(891, 580);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelTrafficLight);
             this.Controls.Add(this.lblHdrClock);
             this.Controls.Add(this.lblClock);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblHdrCountdown);
-            this.Controls.Add(this.btn5_click);
             this.Controls.Add(this.lblCountdown);
-            this.Controls.Add(this.button);
             this.Controls.Add(this.lblGiayConLai);
             this.Controls.Add(this.lblHdrStatus);
             this.Controls.Add(this.lblCurrentMode);
@@ -803,8 +668,6 @@ namespace Ethernet_TrafficLight
             this.grpTrafficKind.ResumeLayout(false);
             this.grpTiming.ResumeLayout(false);
             this.grpTiming.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -812,15 +675,5 @@ namespace Ethernet_TrafficLight
 
         private TextBox textBox1;
         private TextBox textBox2;
-        private Button button888_click;
-        private Button button;
-        private Panel panel1;
-        private Panel panel2;
-        private Panel panel3;
-        private Panel panel4;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Button btn5_click;
     }
 }

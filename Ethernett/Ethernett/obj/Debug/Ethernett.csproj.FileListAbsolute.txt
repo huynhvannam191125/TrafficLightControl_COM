@@ -8,3 +8,14 @@ D:\Ethernett\Ethernett\obj\Debug\Ethernett.csproj.GenerateResource.cache
 D:\Ethernett\Ethernett\obj\Debug\Ethernett.csproj.CoreCompileInputs.cache
 D:\Ethernett\Ethernett\obj\Debug\Ethernett.exe
 D:\Ethernett\Ethernett\obj\Debug\Ethernett.pdb
+D:\hk2_nam3\Github_cua_Nam\TrafficLightControl_COM\Ethernett\Ethernett\bin\Debug\Ethernett.exe.config
+D:\hk2_nam3\Github_cua_Nam\TrafficLightControl_COM\Ethernett\Ethernett\bin\Debug\Ethernett.exe
+D:\hk2_nam3\Github_cua_Nam\TrafficLightControl_COM\Ethernett\Ethernett\bin\Debug\Ethernett.pdb
+D:\hk2_nam3\Github_cua_Nam\TrafficLightControl_COM\Ethernett\Ethernett\obj\Debug\Ethernett.csproj.AssemblyReference.cache
+D:\hk2_nam3\Github_cua_Nam\TrafficLightControl_COM\Ethernett\Ethernett\obj\Debug\Ethernett.exe.config
+D:\hk2_nam3\Github_cua_Nam\TrafficLightControl_COM\Ethernett\Ethernett\obj\Debug\Ethernet_TrafficLight.Form1.resources
+D:\hk2_nam3\Github_cua_Nam\TrafficLightControl_COM\Ethernett\Ethernett\obj\Debug\Ethernett.Properties.Resources.resources
+D:\hk2_nam3\Github_cua_Nam\TrafficLightControl_COM\Ethernett\Ethernett\obj\Debug\Ethernett.csproj.GenerateResource.cache
+D:\hk2_nam3\Github_cua_Nam\TrafficLightControl_COM\Ethernett\Ethernett\obj\Debug\Ethernett.csproj.CoreCompileInputs.cache
+D:\hk2_nam3\Github_cua_Nam\TrafficLightControl_COM\Ethernett\Ethernett\obj\Debug\Ethernett.exe
+D:\hk2_nam3\Github_cua_Nam\TrafficLightControl_COM\Ethernett\Ethernett\obj\Debug\Ethernett.pdb
