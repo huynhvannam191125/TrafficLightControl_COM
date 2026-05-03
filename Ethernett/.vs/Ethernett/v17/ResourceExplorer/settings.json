@@ -1,0 +1,24 @@
+{
+  "ShowEmptyProjects": false,
+  "SelectedGroups": [
+    "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Resource1.resx",
+    "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Form1.resx",
+    "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Properties\\Resources.resx"
+  ],
+  "ExpandedProjects": [
+    "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Ethernett.csproj"
+  ],
+  "EnableSpellChecker": false,
+  "ColumnOrder": [
+    "name",
+    "file-path",
+    "file-name",
+    "type",
+    "neutral-value",
+    "neutral-comment"
+  ],
+  "VisibleColumnKeys": [
+    "name",
+    "neutral-value"
+  ]
+}

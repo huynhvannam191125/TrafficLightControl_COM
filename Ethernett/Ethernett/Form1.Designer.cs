@@ -5,13 +5,6 @@ namespace Ethernet_TrafficLight
 {
     partial class Form1
     {
-        private Panel    panelTrafficLight;
-        private Panel    panelRed;
-        private Panel    panelYellow;
-        private Panel    panelGreen;
-        private Label    lblTrafficRedText;
-        private Label    lblTrafficYellowText;
-        private Label    lblTrafficGreenText;
         private Label    lblHdrClock;
         private Label    lblClock;
         private Label    lblDate;
@@ -48,13 +41,6 @@ namespace Ethernet_TrafficLight
 
         private void InitializeComponent()
         {
-            this.panelTrafficLight = new System.Windows.Forms.Panel();
-            this.panelRed = new System.Windows.Forms.Panel();
-            this.panelYellow = new System.Windows.Forms.Panel();
-            this.panelGreen = new System.Windows.Forms.Panel();
-            this.lblTrafficRedText = new System.Windows.Forms.Label();
-            this.lblTrafficYellowText = new System.Windows.Forms.Label();
-            this.lblTrafficGreenText = new System.Windows.Forms.Label();
             this.lblHdrClock = new System.Windows.Forms.Label();
             this.lblClock = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
@@ -90,87 +76,19 @@ namespace Ethernet_TrafficLight
             this.btnApplyTime = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panelTrafficLight.SuspendLayout();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grpServer.SuspendLayout();
             this.grpControlSource.SuspendLayout();
             this.grpTrafficKind.SuspendLayout();
             this.grpTiming.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panelTrafficLight
-            // 
-            this.panelTrafficLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
-            this.panelTrafficLight.Controls.Add(this.panelRed);
-            this.panelTrafficLight.Controls.Add(this.panelYellow);
-            this.panelTrafficLight.Controls.Add(this.panelGreen);
-            this.panelTrafficLight.Controls.Add(this.lblTrafficRedText);
-            this.panelTrafficLight.Controls.Add(this.lblTrafficYellowText);
-            this.panelTrafficLight.Controls.Add(this.lblTrafficGreenText);
-            this.panelTrafficLight.Location = new System.Drawing.Point(12, 44);
-            this.panelTrafficLight.Name = "panelTrafficLight";
-            this.panelTrafficLight.Size = new System.Drawing.Size(150, 500);
-            this.panelTrafficLight.TabIndex = 1;
-            this.panelTrafficLight.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTrafficLight_Paint);
-            // 
-            // panelRed
-            // 
-            this.panelRed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panelRed.Location = new System.Drawing.Point(25, 25);
-            this.panelRed.Name = "panelRed";
-            this.panelRed.Size = new System.Drawing.Size(100, 120);
-            this.panelRed.TabIndex = 0;
-            this.panelRed.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLight_Paint);
-            // 
-            // panelYellow
-            // 
-            this.panelYellow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(0)))));
-            this.panelYellow.Location = new System.Drawing.Point(25, 175);
-            this.panelYellow.Name = "panelYellow";
-            this.panelYellow.Size = new System.Drawing.Size(100, 120);
-            this.panelYellow.TabIndex = 1;
-            this.panelYellow.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLight_Paint);
-            // 
-            // panelGreen
-            // 
-            this.panelGreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(60)))), ((int)(((byte)(0)))));
-            this.panelGreen.Location = new System.Drawing.Point(25, 325);
-            this.panelGreen.Name = "panelGreen";
-            this.panelGreen.Size = new System.Drawing.Size(100, 120);
-            this.panelGreen.TabIndex = 2;
-            this.panelGreen.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLight_Paint);
-            // 
-            // lblTrafficRedText
-            // 
-            this.lblTrafficRedText.AutoSize = true;
-            this.lblTrafficRedText.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lblTrafficRedText.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lblTrafficRedText.Location = new System.Drawing.Point(38, 148);
-            this.lblTrafficRedText.Name = "lblTrafficRedText";
-            this.lblTrafficRedText.Size = new System.Drawing.Size(25, 15);
-            this.lblTrafficRedText.TabIndex = 3;
-            this.lblTrafficRedText.Text = "DO";
-            // 
-            // lblTrafficYellowText
-            // 
-            this.lblTrafficYellowText.AutoSize = true;
-            this.lblTrafficYellowText.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lblTrafficYellowText.ForeColor = System.Drawing.Color.Gold;
-            this.lblTrafficYellowText.Location = new System.Drawing.Point(30, 298);
-            this.lblTrafficYellowText.Name = "lblTrafficYellowText";
-            this.lblTrafficYellowText.Size = new System.Drawing.Size(40, 15);
-            this.lblTrafficYellowText.TabIndex = 4;
-            this.lblTrafficYellowText.Text = "VANG";
-            // 
-            // lblTrafficGreenText
-            // 
-            this.lblTrafficGreenText.AutoSize = true;
-            this.lblTrafficGreenText.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lblTrafficGreenText.ForeColor = System.Drawing.Color.LimeGreen;
-            this.lblTrafficGreenText.Location = new System.Drawing.Point(30, 448);
-            this.lblTrafficGreenText.Name = "lblTrafficGreenText";
-            this.lblTrafficGreenText.Size = new System.Drawing.Size(41, 15);
-            this.lblTrafficGreenText.TabIndex = 5;
-            this.lblTrafficGreenText.Text = "XANH";
             // 
             // lblHdrClock
             // 
@@ -630,15 +548,59 @@ namespace Ethernet_TrafficLight
             this.textBox2.Text = "23647071";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.pictureBox3);
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Location = new System.Drawing.Point(24, 52);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(132, 469);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.ErrorImage = null;
+            this.pictureBox3.Image = global::Ethernet_TrafficLight.Properties.Resources.den;
+            this.pictureBox3.InitialImage = null;
+            this.pictureBox3.Location = new System.Drawing.Point(17, 328);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 113);
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.ErrorImage = null;
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(17, 177);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 113);
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = global::Ethernet_TrafficLight.Properties.Resources.den;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(17, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 113);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Olive;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(891, 580);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.panelTrafficLight);
             this.Controls.Add(this.lblHdrClock);
             this.Controls.Add(this.lblClock);
             this.Controls.Add(this.lblDate);
@@ -659,8 +621,6 @@ namespace Ethernet_TrafficLight
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Den Giao Thong - Ethernet";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panelTrafficLight.ResumeLayout(false);
-            this.panelTrafficLight.PerformLayout();
             this.grpServer.ResumeLayout(false);
             this.grpServer.PerformLayout();
             this.grpControlSource.ResumeLayout(false);
@@ -668,6 +628,10 @@ namespace Ethernet_TrafficLight
             this.grpTrafficKind.ResumeLayout(false);
             this.grpTiming.ResumeLayout(false);
             this.grpTiming.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -675,5 +639,9 @@ namespace Ethernet_TrafficLight
 
         private TextBox textBox1;
         private TextBox textBox2;
+        private GroupBox groupBox1;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
     }
 }

@@ -6,32 +6,33 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
+using System.Windows.Forms.PropertyGridInternal;
 
 namespace Ethernet_TrafficLight
 {
     public partial class Form1 : Form
     {
         enum TrafficMode { Mode1_Red, Mode2_YellowBlink, Mode3_Time }
-        enum LightState  { Red, Yellow, Green }
+        enum LightState { Red, Yellow, Green }
 
-        private TrafficMode currentMode  = TrafficMode.Mode3_Time;
-        private LightState  currentLight = LightState.Red;
-        private bool isGUI        = false;
-        private bool yellowBlink  = false;
+        private TrafficMode currentMode = TrafficMode.Mode3_Time;
+        private LightState currentLight = LightState.Red;
+        private bool isGUI = false;
+        private bool yellowBlink = false;
         private bool redOn = false, yellowOn = false, greenOn = false;
 
-        private int    tRed = 5, tYellow = 3, tGreen = 8;
-        private int    countdown      = 0;
-        private string recvBuffer     = "";
-        private bool   lastWasDaytimeSet = false;
-        private bool   lastWasDaytime    = false;
+        private int tRed = 5, tYellow = 3, tGreen = 8;
+        private int countdown = 0;
+        private string recvBuffer = "";
+        private bool lastWasDaytimeSet = false;
+        private bool lastWasDaytime = false;
 
         // TCP Server
-        private TcpListener  tcpServer    = null;
-        private TcpClient    picClient    = null;
-        private NetworkStream netStream   = null;
-        private Thread        listenThread = null;
-        private Thread        readThread   = null;
+        private TcpListener tcpServer = null;
+        private TcpClient picClient = null;
+        private NetworkStream netStream = null;
+        private Thread listenThread = null;
+        private Thread readThread = null;
         private volatile bool serverRunning = false;
 
         // Timers
@@ -76,7 +77,7 @@ namespace Ethernet_TrafficLight
         {
             var now = DateTime.Now;
             lblClock.Text = now.ToString("HH:mm:ss");
-            lblDate.Text  = now.ToString("dd/MM/yyyy");
+            lblDate.Text = now.ToString("dd/MM/yyyy");
             if (currentMode == TrafficMode.Mode3_Time && isGUI)
                 CheckTimeMode3(now);
         }
@@ -84,8 +85,8 @@ namespace Ethernet_TrafficLight
         private void BlinkTimer_Tick(object sender, EventArgs e)
         {
             yellowBlink = !yellowBlink;
-            panelYellow.BackColor = yellowBlink ? Color.Yellow : Color.FromArgb(60, 60, 0);
-            panelYellow.Invalidate();
+            pictureBox2.Image = yellowBlink ? Properties.Resources.vang : Properties.Resources.den;
+
         }
 
         // ════════════════════════════════════════════════════════
@@ -96,11 +97,11 @@ namespace Ethernet_TrafficLight
             try
             {
                 IPAddress localIP = IPAddress.Parse(ip);
-                tcpServer     = new TcpListener(localIP, port);
+                tcpServer = new TcpListener(localIP, port);
                 serverRunning = true;
                 tcpServer.Start();
 
-                lblStatus.Text      = "Server dang chay " + ip + ":" + port + " - Cho PIC ket noi...";
+                lblStatus.Text = "Server dang chay " + ip + ":" + port + " - Cho PIC ket noi...";
                 lblStatus.ForeColor = Color.Yellow;
 
                 listenThread = new Thread(new ThreadStart(ListenLoop));
@@ -117,9 +118,9 @@ namespace Ethernet_TrafficLight
         private void StopServer()
         {
             serverRunning = false;
-            try { if (netStream  != null) netStream.Close();  } catch { }
-            try { if (picClient  != null) picClient.Close();  } catch { }
-            try { if (tcpServer  != null) tcpServer.Stop();   } catch { }
+            try { if (netStream != null) netStream.Close(); } catch { }
+            try { if (picClient != null) picClient.Close(); } catch { }
+            try { if (tcpServer != null) tcpServer.Stop(); } catch { }
             netStream = null; picClient = null; tcpServer = null;
         }
 
@@ -137,7 +138,7 @@ namespace Ethernet_TrafficLight
                     if (IsHandleCreated)
                         Invoke(new Action(delegate
                         {
-                            lblStatus.Text      = " da ket noi tu " + picAddr;
+                            lblStatus.Text = " da ket noi tu " + picAddr;
                             lblStatus.ForeColor = Color.LimeGreen;
                             grpControlSource.Enabled = true;
                             SendChar(isGUI ? 'G' : 'M');
@@ -151,13 +152,13 @@ namespace Ethernet_TrafficLight
                     if (IsHandleCreated)
                         Invoke(new Action(delegate
                         {
-                            lblStatus.Text      = " ngat ket noi - Cho ket noi lai...";
+                            lblStatus.Text = " ngat ket noi - Cho ket noi lai...";
                             lblStatus.ForeColor = Color.Yellow;
-                            grpControlSource.Enabled     = false;
+                            grpControlSource.Enabled = false;
                             btnMode1.Enabled = btnMode2.Enabled = btnMode3.Enabled = false;
                             SetTimeInputsEnabled(false);
                             SetLightsGUI(false, false, false);
-                            lblCountdown.Text      = "--";
+                            lblCountdown.Text = "--";
                             lblCountdown.ForeColor = Color.Gray;
                             UpdateModeLabel(" ngat ket noi...");
                             blinkTimer.Stop();
@@ -182,9 +183,9 @@ namespace Ethernet_TrafficLight
 
                     while (recvBuffer.Contains("\n"))
                     {
-                        int    idx  = recvBuffer.IndexOf("\n");
+                        int idx = recvBuffer.IndexOf("\n");
                         string line = recvBuffer.Substring(0, idx).Trim();
-                        recvBuffer  = recvBuffer.Substring(idx + 1);
+                        recvBuffer = recvBuffer.Substring(idx + 1);
                         if (!string.IsNullOrEmpty(line) && IsHandleCreated)
                         {
                             string captured = line;
@@ -227,8 +228,7 @@ namespace Ethernet_TrafficLight
             if (msg.StartsWith("BLINK:"))
             {
                 bool on = msg.Contains("BLINK:1");
-                panelYellow.BackColor = on ? Color.Yellow : Color.FromArgb(60, 60, 0);
-                panelYellow.Invalidate();
+                pictureBox2.Image = on ? Properties.Resources.vang : Properties.Resources.den;
                 return;
             }
 
@@ -237,14 +237,14 @@ namespace Ethernet_TrafficLight
             {
                 blinkTimer.Stop();
                 char color = ' ';
-                int  sec   = 0;
+                int sec = 0;
 
-                if      (msg.Contains("RED:"))    color = 'R';
+                if (msg.Contains("RED:")) color = 'R';
                 else if (msg.Contains("YELLOW:")) color = 'Y';
-                else if (msg.Contains("GREEN:"))  color = 'G';
-                else if (msg.Contains("RED"))     color = 'R';
-                else if (msg.Contains("YELLOW"))  color = 'Y';
-                else if (msg.Contains("GREEN"))   color = 'G';
+                else if (msg.Contains("GREEN:")) color = 'G';
+                else if (msg.Contains("RED")) color = 'R';
+                else if (msg.Contains("YELLOW")) color = 'Y';
+                else if (msg.Contains("GREEN")) color = 'G';
 
                 int colonIdx = msg.LastIndexOf(':');
                 if (colonIdx >= 0 && colonIdx < msg.Length - 1)
@@ -259,8 +259,8 @@ namespace Ethernet_TrafficLight
 
                 if (sec > 0)
                 {
-                    countdown              = sec;
-                    lblCountdown.Text      = countdown.ToString();
+                    countdown = sec;
+                    lblCountdown.Text = countdown.ToString();
                     lblCountdown.ForeColor = redOn ? Color.Red : yellowOn ? Color.Yellow : Color.Lime;
                 }
                 return;
@@ -296,7 +296,7 @@ namespace Ethernet_TrafficLight
             if (msg.Contains("AUTO_MODE"))
             {
                 if (isGUI) return;
-                currentMode  = TrafficMode.Mode3_Time;
+                currentMode = TrafficMode.Mode3_Time;
                 currentLight = LightState.Red;
                 blinkTimer.Stop();
                 lblCountdown.Text = "--"; lblCountdown.ForeColor = Color.Gray;
@@ -308,7 +308,7 @@ namespace Ethernet_TrafficLight
                     SetLightsGUI(false, true, false);
                     UpdateModeLabel("MODE 3 - Ban dem (Vang nhap nhay)");
                     lastWasDaytimeSet = true;
-                    lastWasDaytime    = false;
+                    lastWasDaytime = false;
                     SendChar('Y');
                 }
                 else
@@ -316,7 +316,7 @@ namespace Ethernet_TrafficLight
                     SetLightsGUI(false, false, false);
                     UpdateModeLabel("MODE 3 - Cho PIC...");
                     lastWasDaytimeSet = true;
-                    lastWasDaytime    = true;
+                    lastWasDaytime = true;
                     SendChar('A');
                 }
                 return;
@@ -326,7 +326,7 @@ namespace Ethernet_TrafficLight
             if (msg.Contains("MANUAL_MODE"))
             {
                 isGUI = false; chkGUI.Checked = false;
-                lblControlMode.Text      = "Che do: MANUAL (Tai tru)";
+                lblControlMode.Text = "Che do: MANUAL (Tai tru)";
                 lblControlMode.ForeColor = Color.Orange;
                 btnMode1.Enabled = btnMode2.Enabled = btnMode3.Enabled = false;
                 SetTimeInputsEnabled(false);
@@ -337,7 +337,7 @@ namespace Ethernet_TrafficLight
             if (msg.Contains("GUI_MODE"))
             {
                 isGUI = true; chkGUI.Checked = true;
-                lblControlMode.Text      = "Che do: GUI (May tinh)";
+                lblControlMode.Text = "Che do: GUI (May tinh)";
                 lblControlMode.ForeColor = Color.Cyan;
                 btnMode1.Enabled = btnMode2.Enabled = btnMode3.Enabled = true;
                 SetTimeInputsEnabled(true);
@@ -390,7 +390,7 @@ namespace Ethernet_TrafficLight
             bool isDaytime = (now.Hour >= 5 && now.Hour < 22);
             if (lastWasDaytimeSet && lastWasDaytime == isDaytime) return;
             lastWasDaytimeSet = true;
-            lastWasDaytime    = isDaytime;
+            lastWasDaytime = isDaytime;
 
             if (isDaytime)
             {
@@ -423,7 +423,7 @@ namespace Ethernet_TrafficLight
         private void chkGUI_CheckedChanged(object sender, EventArgs e)
         {
             isGUI = chkGUI.Checked;
-            lblControlMode.Text      = isGUI ? "Che do: GUI (May tinh)" : "Che do: MANUAL (Tai tru)";
+            lblControlMode.Text = isGUI ? "Che do: GUI (May tinh)" : "Che do: MANUAL (Tai tru)";
             lblControlMode.ForeColor = isGUI ? Color.Cyan : Color.Orange;
             btnMode1.Enabled = btnMode2.Enabled = btnMode3.Enabled = isGUI;
             SetTimeInputsEnabled(isGUI);
@@ -458,7 +458,7 @@ namespace Ethernet_TrafficLight
         {
             if (!serverRunning)
             {
-                string ip      = txtServerIP.Text.Trim();
+                string ip = txtServerIP.Text.Trim();
                 string portStr = txtServerPort.Text.Trim();
                 IPAddress dummy;
 
@@ -470,23 +470,23 @@ namespace Ethernet_TrafficLight
                 { MessageBox.Show("Port khong hop le (1-65535)!", "Loi", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
 
                 StartServer(ip, port);
-                btnStartServer.Text      = "Dung Server";
+                btnStartServer.Text = "Dung Server";
                 btnStartServer.BackColor = Color.Firebrick;
             }
             else
             {
                 StopServer();
-                serverRunning            = false;
-                btnStartServer.Text      = "Khoi dong Server";
+                serverRunning = false;
+                btnStartServer.Text = "Khoi dong Server";
                 btnStartServer.BackColor = Color.MediumSeaGreen;
-                lblStatus.Text           = "X Server da dung";
-                lblStatus.ForeColor      = Color.OrangeRed;
+                lblStatus.Text = "X Server da dung";
+                lblStatus.ForeColor = Color.OrangeRed;
                 grpControlSource.Enabled = false;
                 btnMode1.Enabled = btnMode2.Enabled = btnMode3.Enabled = false;
                 SetTimeInputsEnabled(false);
                 SetLightsGUI(false, false, false);
                 blinkTimer.Stop();
-                lblCountdown.Text      = "--";
+                lblCountdown.Text = "--";
                 lblCountdown.ForeColor = Color.Gray;
                 UpdateModeLabel("Cho ket noi...");
             }
@@ -497,14 +497,14 @@ namespace Ethernet_TrafficLight
         // ════════════════════════════════════════════════════════
         private void btnApplyTime_Click(object sender, EventArgs e)
         {
-            Color ok  = Color.FromArgb(35, 35, 50);
+            Color ok = Color.FromArgb(35, 35, 50);
             Color err = Color.FromArgb(80, 20, 20);
             bool valid = true;
             int r = 0, y = 0, g = 0;
 
-            if (!int.TryParse(txtRed.Text,    out r) || r < 1 || r > 9) { valid = false; txtRed.BackColor    = err; } else txtRed.BackColor    = ok;
+            if (!int.TryParse(txtRed.Text, out r) || r < 1 || r > 9) { valid = false; txtRed.BackColor = err; } else txtRed.BackColor = ok;
             if (!int.TryParse(txtYellow.Text, out y) || y < 1 || y > 9) { valid = false; txtYellow.BackColor = err; } else txtYellow.BackColor = ok;
-            if (!int.TryParse(txtGreen.Text,  out g) || g < 1 || g > 9) { valid = false; txtGreen.BackColor  = err; } else txtGreen.BackColor  = ok;
+            if (!int.TryParse(txtGreen.Text, out g) || g < 1 || g > 9) { valid = false; txtGreen.BackColor = err; } else txtGreen.BackColor = ok;
             if (!valid) { MessageBox.Show("Thoi gian phai tu 1 den 9 giay!", "Loi", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
 
             tRed = r; tYellow = y; tGreen = g;
@@ -559,53 +559,21 @@ namespace Ethernet_TrafficLight
 
         private void SetLightsGUI(bool red, bool yellow, bool green)
         {
-            redOn = red; yellowOn = yellow; greenOn = green;
-            panelRed.BackColor    = red    ? Color.Red    : Color.FromArgb(60, 0, 0);
-            panelYellow.BackColor = yellow ? Color.Yellow : Color.FromArgb(60, 60, 0);
-            panelGreen.BackColor  = green  ? Color.Lime   : Color.FromArgb(0, 60, 0);
-            panelRed.Invalidate(); panelYellow.Invalidate(); panelGreen.Invalidate();
+            redOn = red;
+            yellowOn = yellow;
+            greenOn = green;
+
+            pictureBox1.Image = red ? Properties.Resources.den_do : Properties.Resources.den;
+            pictureBox2.Image = yellow ? Properties.Resources.vang : Properties.Resources.den;
+            pictureBox3.Image = green ? Properties.Resources.xanh : Properties.Resources.den;
         }
 
         private void UpdateModeLabel(string text)
-        { lblCurrentMode.Text = text; lblCurrentMode.ForeColor = Color.Lime; }
-
-        private void panelTrafficLight_Paint(object sender, PaintEventArgs e)
-        {
-            Graphics g = e.Graphics;
-            g.SmoothingMode = SmoothingMode.AntiAlias;
-            Rectangle r = new Rectangle(5, 5, panelTrafficLight.Width - 10, panelTrafficLight.Height - 10);
-            using (SolidBrush br  = new SolidBrush(Color.FromArgb(25, 25, 35))) g.FillRoundedRectangle(br, r, 18);
-            using (Pen        pen = new Pen(Color.FromArgb(80, 80, 100), 2))    g.DrawRoundedRectangle(pen, r, 18);
+        { lblCurrentMode.Text = text;
+            lblCurrentMode.ForeColor = Color.Lime;
         }
 
-        private void panelLight_Paint(object sender, PaintEventArgs e)
-        {
-            Panel p = (Panel)sender;
-            Graphics g = e.Graphics;
-            g.SmoothingMode = SmoothingMode.AntiAlias;
-            int d = Math.Min(p.Width, p.Height) - 12, x = (p.Width - d) / 2, y = (p.Height - d) / 2;
-            Rectangle rect = new Rectangle(x, y, d, d);
-            using (SolidBrush br  = new SolidBrush(p.BackColor))            g.FillEllipse(br, rect);
-            using (Pen        pen = new Pen(Color.FromArgb(90, 90, 90), 2)) g.DrawEllipse(pen, rect);
-        }
-    }
 
-    public static class GraphicsExtensions
-    {
-        public static void FillRoundedRectangle(this Graphics g, Brush b, Rectangle r, int radius)
-        { using (GraphicsPath path = BuildPath(r, radius)) g.FillPath(b, path); }
-        public static void DrawRoundedRectangle(this Graphics g, Pen p, Rectangle r, int radius)
-        { using (GraphicsPath path = BuildPath(r, radius)) g.DrawPath(p, path); }
-        private static GraphicsPath BuildPath(Rectangle r, int radius)
-        {
-            int d = radius * 2;
-            GraphicsPath path = new GraphicsPath();
-            path.AddArc(r.X, r.Y, d, d, 180, 90);
-            path.AddArc(r.Right - d, r.Y, d, d, 270, 90);
-            path.AddArc(r.Right - d, r.Bottom - d, d, d, 0, 90);
-            path.AddArc(r.X, r.Bottom - d, d, d, 90, 90);
-            path.CloseFigure();
-            return path;
-        }
+
     }
 }

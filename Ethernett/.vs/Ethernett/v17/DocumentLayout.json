@@ -3,16 +3,34 @@
   "WorkspaceRootPath": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|d:\\hk2_nam3\\github_cua_nam\\trafficlightcontrol_com\\ethernett\\ethernett\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|solutionrelative:ethernett\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\ethernett\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|d:\\hk2_nam3\\github_cua_nam\\trafficlightcontrol_com\\ethernett\\ethernett\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|solutionrelative:ethernett\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\ethernett\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|d:\\hk2_nam3\\github_cua_nam\\trafficlightcontrol_com\\ethernett\\ethernett\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|solutionrelative:ethernett\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Ethernett||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|d:\\hk2_nam3\\github_cua_nam\\trafficlightcontrol_com\\ethernett\\ethernett\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|solutionrelative:ethernett\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|d:\\hk2_nam3\\github_cua_nam\\trafficlightcontrol_com\\ethernett\\ethernett\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|solutionrelative:ethernett\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|d:\\hk2_nam3\\github_cua_nam\\trafficlightcontrol_com\\ethernett\\ethernett\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|solutionrelative:ethernett\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\ethernett\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|solutionrelative:ethernett\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134C3D9E-A361-433F-848F-470EB4419DF9}|Ethernett\\Ethernett.csproj|d:\\hk2_nam3\\github_cua_nam\\trafficlightcontrol_com\\ethernett\\ethernett\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +40,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Form1.cs",
               "RelativeDocumentMoniker": "Ethernett\\Form1.cs",
               "ToolTip": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Form1.cs",
               "RelativeToolTip": "Ethernett\\Form1.cs",
-              "ViewState": "AgIAAE4BAAAAAAAAAAAuwCkCAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJUAAAAAAAAAAAApwFcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-23T05:22:08.081Z",
               "IsPinned": true,
@@ -40,29 +58,77 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Ethernett\\Form1.Designer.cs",
               "ToolTip": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Form1.Designer.cs",
               "RelativeToolTip": "Ethernett\\Form1.Designer.cs",
-              "ViewState": "AgIAAIACAAAAAAAAAAAgwFwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADQCAAAAAAAAAAAvwEoCAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T09:49:41.391Z",
-              "IsPinned": true,
+              "WhenOpened": "2026-05-03T03:57:41.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Ethernett",
+              "DocumentMoniker": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Ethernett.csproj",
+              "RelativeDocumentMoniker": "Ethernett\\Ethernett.csproj",
+              "ToolTip": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Ethernett.csproj",
+              "RelativeToolTip": "Ethernett\\Ethernett.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-03T03:57:06.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "Ethernett\\Properties\\Resources.Designer.cs",
+              "ToolTip": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "Ethernett\\Properties\\Resources.Designer.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwGIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T03:28:09.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Ethernett\\Properties\\Resources.resx",
+              "ToolTip": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Properties\\Resources.resx",
+              "RelativeToolTip": "Ethernett\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-03T03:27:47.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Program.cs",
+              "RelativeDocumentMoniker": "Ethernett\\Program.cs",
+              "ToolTip": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Program.cs",
+              "RelativeToolTip": "Ethernett\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T03:14:12.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Form1.cs",
               "RelativeDocumentMoniker": "Ethernett\\Form1.cs",
               "ToolTip": "D:\\hk2_nam3\\Github_cua_Nam\\TrafficLightControl_COM\\Ethernett\\Ethernett\\Form1.cs [Design]",
               "RelativeToolTip": "Ethernett\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T06:00:52.835Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-04-22T06:00:52.835Z"
             }
           ]
         }
